@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarek Hamed | Personal Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: #111827;
+            border-bottom: 1px solid #1f2937;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1e293b 0%, #0b0f19 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #0284c7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
+
+        /* General Sections */
+        section {
+            padding: 80px 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #f3f4f6;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #38bdf8;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Grid Cards Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f172a;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">Tarek Hamed</div>
+        <ul class="nav-links">
+            <li><a href="#about">عنّي</a></li>
+            <li><a href="#skills">المهارات</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>مرحباً، أنا <span>طارق حامد</span></h1>
+        <p>مطور شغوف ومهندس واعد مهتم بتطوير الحلول التقنية واختبار البرمجيات واستكشاف البيانات.</p>
+        <a href="#projects" class="btn">استعرض أعمالي</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">نبذة عني</h2>
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p>
+                طالب مهتم بمجالات التكنولوجيا، البرمجة، واستكشاف التقنيات الحديثة. أسعى دائماً لتطوير مهاراتي وبناء مشاريع برمجية ذكية تجمع بين الكفاءة والتصميم المودرن.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">المهارات والتقنيات</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>تطوير الويب</h3>
+                <p>بناء واجهات المستخدم وتطوير المواقع باستخدام لغات الويب الأساسية وتقنيات التصميم الحديثة.</p>
+            </div>
+            <div class="card">
+                <h3>إدارة النسخ و Git</h3>
+                <p>إدارة مشاريع الأكواد والمستودعات الاحترافية والعمل الجماعي باستخدام Git & GitHub.</p>
+            </div>
+            <div class="card">
+                <h3>اختبار البرمجيات</h3>
+                <p>فهم أساسيات اختبار النظام (Software Testing) لضمان جودة وكفاءة التطبيقات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">المشاريع</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>موقع معرض أعمال شخصي مصمم بأسلوب Dark Mode ومستضاف عبر GitHub Pages.</p>
+            </div>
+            <div class="card">
+                <h3>مشروع جديد قادماً...</h3>
+                <p>جارٍ العمل على مشاريع برمجية جديدة وإضافتها قريباً إلى المستودع.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Tarek Hamed. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
